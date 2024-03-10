@@ -15,11 +15,12 @@ Access to the full Day-Ahead market dataset and balancing market dataset via Goo
 The 'Forecasting Library' directory contains the main code files used for forecasting. Below is a list of files included:
 
 - BM Forecasting.ipynb: This is the main notebook file containing code for running different forecasting models.
-- Modelling_Functions_ARIMA.py: Python script containing functions related to ARIMA modeling.
+
 - Modelling_Functions_LEAR.py: Python script containing functions related to Linear Regression modeling.
-- Modelling_Functions_MH_DNN.py: Python script containing functions related to Multi-Head Deep Neural Network modeling.
-- Modelling_Functions_SH_DNN.py: Python script containing functions related to Single-Head Deep Neural Network modeling.
+- Modelling_Functions_ARIMA.py: Python script containing functions related to ARIMA modeling.
 - Modelling_Functions_SVR_XGB_RF.py: Python script containing functions related to Support Vector Regression, XGBoost, and Random Forest modeling.
+- Modelling_Functions_SH_DNN.py: Python script containing functions related to Single-Head Deep Neural Network modeling.
+- Modelling_Functions_MH_DNN.py: Python script containing functions related to Multi-Head Deep Neural Network modeling.
 
 The 'BM Forecasting.ipynb' notebook serves as the main file for running different forecasting models. It imports and utilizes the functions defined in the Python scripts mentioned above.
 
