@@ -28,7 +28,7 @@ The historical data used for BM price prediction includes:
 - *DAM Prices (DAM)*: DAM prices from the previous 24 hours, used at an hourly granularity for each half-hour settlement period: \( [DAM_{t-48},...,DAM_t] \).
 
 In the BM dataset file this is presented as:
-\
+
 BMP=[lag_-3x1,...,lag_-51x1]  
 \
 \
@@ -42,7 +42,6 @@ I=[lag_-2x12,...,lag_-50x12]
 \
 \
 DAM=[lag_0x6,...,lag_-47x6]
-\
 
 Unused Data:
 Carbon Price Data - lag\_0x4
