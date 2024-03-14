@@ -14,7 +14,7 @@ Y_{BM}=[BMP_{t+2},...,BMP_{t+17}].
 In the BM dataset file this is presented as:
 
 
-Y_{BM}=[\text{lag\_2y},...,\text{lag\_17y}].
+Y_{BM}=[lag_2y,...,lag_17y].
 
 
 #### Historic data
