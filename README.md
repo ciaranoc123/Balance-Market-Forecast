@@ -6,10 +6,12 @@ Access to the full datasets can be found at: [Google Drive Link](https://drive.g
 ### Balancing Market
 
 For the Balancing Market (BM), we predict BM prices for the next 16 open settlement periods. The forecast horizon starts at \( t+2 \) as at time \( t \), the market periods \( t \) and \( t+1 \) are already closed, and adjustments can only be made from \( t+2 \), denoted as:
+
 Y_{BM}=[BMP_{t+2},...,BMP_{t+17}].
 
 
 In the BM dataset file this is presented as:
+
 Y_{BM}=[lag_2y,...,lag_17y].
 
 
@@ -24,6 +26,7 @@ The historical data used for BM price prediction includes:
 - *DAM Prices (DAM)*: DAM prices from the previous 24 hours, used at an hourly granularity for each half-hour settlement period: \( [DAM_{t-48},...,DAM_t] \).
 
 In the BM dataset file this is presented as:
+
 BMP=[lag_-3x1,...,lag_-51x1]  
 
 
@@ -39,6 +42,7 @@ I=[lag_-2x12,...,lag_-50x12]
 DAM=[lag_0x6,...,lag_-47x6]
 
 Unused Data:
+
 Carbon Price Data - lag\_0x4
 
 Gas Price Data - lag\_0x5
@@ -54,6 +58,7 @@ The future-looking data for BM price prediction includes:
 - *DAM Prices (DAM)*: DAM prices for the next 8 hours: \( [DAM_{t+1},...,DAM_{t+16}] \).
 
 In the BM dataset file this is presented as:
+
 PHPN=[lag_2x7},...,lag_17x7]  
 
 PHI=[lag_2x8},...,lag_17x8]  
