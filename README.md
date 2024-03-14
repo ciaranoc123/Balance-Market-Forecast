@@ -7,9 +7,9 @@ Access to the full datasets can be found at: [Google Drive Link](https://drive.g
 
 For the Balancing Market (BM), we predict BM prices for the next 16 open settlement periods. The forecast horizon starts at \( t+2 \) as at time \( t \), the market periods \( t \) and \( t+1 \) are already closed, and adjustments can only be made from \( t+2 \), denoted as:
 
-\[
+
 Y_{BM}=[BMP_{t+2},...,BMP_{t+17}].
-\]
+
 
 In the BM dataset file this is presented as:
 
