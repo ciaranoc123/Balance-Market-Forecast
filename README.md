@@ -13,9 +13,9 @@ Y_{BM}=[BMP_{t+2},...,BMP_{t+17}].
 
 In the BM dataset file this is presented as:
 
-\[
+
 Y_{BM}=[\text{lag\_2y},...,\text{lag\_17y}].
-\]
+
 
 #### Historic data
 
@@ -29,21 +29,21 @@ The historical data used for BM price prediction includes:
 
 In the BM dataset file this is presented as:
 
-\[
+\
 BMP=[\text{lag\_-3x1},...,\text{lag\_-51x1}].  
-\]
-\[
+\
+\
 BMV=[\text{lag\_-3x2},...,\text{lag\_-51x2}]. 
-\]
-\[
+\
+\
 WDiff=[\text{lag\_-2x3},...,\text{lag\_-50x3}]. 
-\]
-\[
+\
+\
 I=[\text{lag\_-2x12},...,\text{lag\_-50x12}].
-\]
-\[
+\
+\
 DAM=[\text{lag\_0x6},...,\text{lag\_-47x6}].
-\]
+\
 
 Unused Data:
 Carbon Price Data - lag\_0x4
@@ -61,21 +61,21 @@ The future-looking data for BM price prediction includes:
 
 In the BM dataset file this is presented as:
 
-\[
+\
 PHPN=[\text{lag\_2x7},...,\text{lag\_17x7}].  
-\]
-\[
+\
+\
 PHI=[\text{lag\_2x8},...,\text{lag\_17x8}].  
-\]
-\[
+\
+\
 PHFW=[\text{lag\_2x9},...,\text{lag\_17x9}].  
-\]
-\[
+\
+\
 PHFD=[\text{lag\_2x10},...,\text{lag\_17x10}].  
-\]
-\[
+\
+\
 DAM=[\text{lag\_2x11},...,\text{lag\_17x11}].  
-\]
+\
 
 The variation in time intervals for historical data is due to availability, limited to the most recent and accessible 48 observations from the data source. For further details on our forecasting approach, market structure, datasets, and variables for both the DAM and BM.
 
