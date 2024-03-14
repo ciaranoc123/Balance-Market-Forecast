@@ -1,4 +1,4 @@
-# Balance-Market-Forecast
+# Balancing-Market-Forecast
 
 This repository contains code and datasets used for forecasting in both the Day-Ahead (DAM) market and the balancing market (BM).
 Access to the full datasets can be found at: [Google Drive Link](https://drive.google.com/drive/u/0/folders/1GSJhwvhRZ5X5A0uJRZzkzCuJ8xu9kDcX)
@@ -25,7 +25,7 @@ The historical data used for BM price prediction includes:
 - *Interconnector Values (I)*: Interconnector flows from the previous 24 hours: \( [I_{t-50},...,I_{t-2}] \).
 - *DAM Prices (DAM)*: DAM prices from the previous 24 hours, used at an hourly granularity for each half-hour settlement period: \( [DAM_{t-48},...,DAM_t] \).
 
-In the BM dataset file this is presented as:
+In the BM dataset file the headers are:
 
 BMP=[lag_-3x1,...,lag_-51x1]; BMV=[lag_-3x2,...,lag_-51x2]; WDiff=[lag_-2x3,...,lag_-50x3]; I=[lag_-2x12,...,lag_-50x12]; DAM=[lag_0x6,...,lag_-47x6]
 
@@ -45,7 +45,7 @@ The future-looking data for BM price prediction includes:
 - *Demand Forecast (PHFD)*: TSO demand forecast for the forecast horizon: \( [PHFD_{t+2},...,PHFD_{t+17}] \).
 - *DAM Prices (DAM)*: DAM prices for the next 8 hours: \( [DAM_{t+1},...,DAM_{t+16}] \).
 
-In the BM dataset file this is presented as:
+In the BM dataset file these headers are:
 
 PHPN=[lag_2x7},...,lag_17x7]; PHI=[lag_2x8},...,lag_17x8]; PHFW=[lag_2x9},...,lag_17x9]; PHFD=[lag_2x10},...,lag_17x10]; DAM=[lag_2x11},...,lag_17x11]  
 
