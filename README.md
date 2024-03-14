@@ -28,21 +28,20 @@ The historical data used for BM price prediction includes:
 - *DAM Prices (DAM)*: DAM prices from the previous 24 hours, used at an hourly granularity for each half-hour settlement period: \( [DAM_{t-48},...,DAM_t] \).
 
 In the BM dataset file this is presented as:
-
 \
-BMP=[lag_-3x1,...,lag_-51x1].  
-\
-\
-BMV=[lag_-3x2,...,lag_-51x2]. 
+BMP=[lag_-3x1,...,lag_-51x1]  
 \
 \
-WDiff=[lag_-2x3,...,lag_-50x3]. 
+BMV=[lag_-3x2,...,lag_-51x2] 
 \
 \
-I=[lag_-2x12,...,lag_-50x12].
+WDiff=[lag_-2x3,...,lag_-50x3] 
 \
 \
-DAM=[lag_0x6,...,lag_-47x6].
+I=[lag_-2x12,...,lag_-50x12]
+\
+\
+DAM=[lag_0x6,...,lag_-47x6]
 \
 
 Unused Data:
@@ -60,21 +59,20 @@ The future-looking data for BM price prediction includes:
 - *DAM Prices (DAM)*: DAM prices for the next 8 hours: \( [DAM_{t+1},...,DAM_{t+16}] \).
 
 In the BM dataset file this is presented as:
-
 \
-PHPN=[lag_2x7},...,lag_17x7].  
-\
-\
-PHI=[lag_2x8},...,lag_17x8].  
+PHPN=[lag_2x7},...,lag_17x7]  
 \
 \
-PHFW=[lag_2x9},...,lag_17x9].  
+PHI=[lag_2x8},...,lag_17x8]  
 \
 \
-PHFD=[lag_2x10},...,lag_17x10].  
+PHFW=[lag_2x9},...,lag_17x9]  
 \
 \
-DAM=[lag_2x11},...,lag_17x11].  
+PHFD=[lag_2x10},...,lag_17x10]  
+\
+\
+DAM=[lag_2x11},...,lag_17x11]  
 \
 
 The variation in time intervals for historical data is due to availability, limited to the most recent and accessible 48 observations from the data source. For further details on our forecasting approach, market structure, datasets, and variables for both the DAM and BM.
