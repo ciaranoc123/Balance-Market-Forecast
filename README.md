@@ -49,6 +49,9 @@ In the BM dataset file these headers are:
 
 PHPN=[lag_2x7},...,lag_17x7]; PHI=[lag_2x8},...,lag_17x8]; PHFW=[lag_2x9},...,lag_17x9]; PHFD=[lag_2x10},...,lag_17x10]; DAM=[lag_2x11},...,lag_17x11]  
 
+### Day-Ahead Market (DAM)
+In our analysis, we focus on predicting DAM prices, with the forecast horizon extending to the subsequent 24 settlement periods.
+The historical data considered for DAM price prediction includes DAM prices for the previous 168 hours and the wind and demand forecasts for the same interval. We then consider the TSO wind and demand forecasts for the forecasting horizon of 24 settlement periods.
 
 The variation in time intervals for historical data is due to availability, limited to the most recent and accessible 48 observations from the data source. For further details on our forecasting approach, market structure, datasets, and variables for both the DAM and BM.
 
