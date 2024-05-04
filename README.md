@@ -56,6 +56,10 @@ The historical data considered for DAM price prediction includes DAM prices for 
 The variation in time intervals for historical data is due to availability, limited to the most recent and accessible 48 observations from the data source. For further details on our forecasting approach, market structure, datasets, and variables for both the DAM and BM.
 
 
+#### Data Pre-Processing
+We remove day light savings days and we impute missing variables with the mean of the previous 30 days or with the most recent data point depending on the context.
+
+
 ## Purpose
 The purpose of this project is to analyze and compare different forecasting models for both the DAM and BM markets, aiming to improve price forecasting accuracy.
 
